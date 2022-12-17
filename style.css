@@ -15,6 +15,9 @@
   --sidbar-width: 240px;
   --font-base: "Bai Jamjuree";
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--color-base2);
   color: var(--color-body);
@@ -58,6 +61,10 @@ img {
 }
 .navbar-nav .nav-link.active {
   color: var(--color-brand);
+}
+.navbar-brand img {
+  height: 200px;
+  width: 200px;
 }
 .text-brand {
   color: var(--color-brand);
@@ -145,7 +152,26 @@ img {
   font-weight: bold;
   font-size: 1.3rem;
 }
-
+.form-control {
+  background-color: var(--color-base);
+  border-color: var(--color-base);
+}
+.form-control:focus {
+  background-color: var(--color-base);
+  box-shadow: none;
+  border-color: var(--color-brand);
+  color: var(--color-body);
+}
+.form-control::placeholder {
+  color: var(--color-body);
+}
+.footer-icon a {
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-base);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
 /* Media Quary  */
 @media only screen and (min-width: 992px) {
   .navbar {
